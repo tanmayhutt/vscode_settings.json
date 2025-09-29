@@ -1,14 +1,14 @@
 # VSCode Settings
 
-These are my personal **Visual Studio Code settings** to make your editor clean, fast, and visually appealing.  
-This `settings.json` focuses on:
+These are my personal **Visual Studio Code settings** to make the editor clean, distraction-free, and visually sharp.  
+Instead of repeating defaults, this setup highlights unique tweaks that actually change the coding experience:
 
-- Minimal distractions  
-- Smooth coding experience  
-- Improved typography and readability  
-- Efficient workspace navigation  
+- Distraction-free editing (no noisy highlights, icons, or popups)  
+- Calmer typography and page-like reading flow  
+- Smart navigation and search tuned for real projects  
+- Custom shell profiles and workflow optimizations  
 
-> Works on Linux, macOS, and Windows (just copy the file to your VSCode User settings folder).
+> Works on **Linux, macOS, and Windows** — just copy the `settings.json` into your VSCode User folder.
 
 ---
 
@@ -20,42 +20,38 @@ Here’s how my VSCode looks with these settings:
 
 ---
 
-## Features
+## Notable Tweaks
 
 ### 🎨 UI / Editor
-- No unnecessary UI clutter: breadcrumbs, tips, lightbulbs, minimap, and overview ruler removed  
-- Sidebar moved to the **right** for better workflow  
-- Smooth cursor blinking (`solid`), no sticky scroll  
-- Line numbers always on  
-- Better control over whitespace: auto-trim trailing spaces and add final newline  
+- 🚫 **Noise-free editing**: disables squiggles, selection highlights, hover spam, color decorators, lightbulbs, and gutter icons  
+- 📐 **Sidebar on the right** + Activity bar moved to the **top** for better wide-screen ergonomics  
+- 🕒 **Delayed hover tooltips** (`1500ms`) → no more instant popups in your face  
+- 🎯 **One-click “Goto”** navigation (skips menus, jumps straight to definition/refs/impl)  
+- 🌳 **Explorer indentation widened** (`15px`) for more breathing room  
+- ➕ **Extra editor padding** (`16px top`) and **line height 32** → makes code feel like reading text, not clutter  
 
 ### ✍️ Typography
 - Fonts: **Geist Mono**, **JetBrains Mono**, **Fira Code**  
-- Font size: `16` with line height `32` for comfortable reading  
-- Terminal font size: `16` with `1.5` line height  
-- Advanced font ligatures enabled (`ss01-ss08`, `calt`, `dlig`)  
+- Advanced ligatures enabled (`ss01–ss08`, `calt`, `dlig`) → refined aesthetics, not just “Fira Code ligatures on”  
+- Font size `16`, with **solid cursor** (no blinking distraction)  
 
-### ⚡ Coding Enhancements
-- Format on Save enabled for: **JavaScript, TypeScript React, Vue, Tailwind, HTML, CSS**  
-- Snippet suggestions appear at the **top**  
-- Includes `-` in word selection (useful for CSS and kebab-case vars)  
-- Multiple “Go to Definition/References” options simplified to **goto** only  
-- Linked editing enabled for paired tags  
-
-### 🔍 Search / File Management
-- Excludes noisy folders/files: `node_modules`, `vendor`, `dist`, `storage`, lock files, PHPUnit cache, etc.  
+### 🔍 Search & File Management
+- **Regex exclusions** to hide noisy `vendor`, `public`, `dist`, etc. but still allow important files (`/livewire`, `index.php`)  
+- Auto-save after delay  
 - Explorer sorting by **type**  
-- Auto-save enabled (after delay)  
 
 ### 🌀 Git / SCM
-- Git decorations disabled (no noisy gutter icons)  
-- SCM diff decorations hidden  
-- Prevents opening repos in parent folders by default  
+- No gutter icons, no diff decorations → Git noise stays in Git, not your editor  
 
 ### 💻 Terminal
-- Multiple profiles supported: **bash, zsh, fish, tmux, pwsh, sh**  
+- Profiles for **bash, zsh, fish, tmux, pwsh, sh**  
 - Default: **zsh**  
-- Multi-line paste warning disabled  
+- Multi-line paste warning disabled → less interruptions  
+
+### 🐘 PHP & Dev Workflow
+- Disables basic PHP IntelliSense spam  
+- `.php_cs` and `.php_cs.dist` properly mapped to PHP  
+- Special integration for AI/chat instructions (`chat.instructionsFilesLocations`)  
 
 ---
 
@@ -67,7 +63,6 @@ Here’s how my VSCode looks with these settings:
 **Linux:**  
 ```zsh
 ~/.config/Code/User/settings.json
-```
 
 **macOS:**  
 ```bash
