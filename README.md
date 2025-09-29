@@ -65,7 +65,7 @@ Here’s how my VSCode looks with these settings:
 2. Copy this file to your VSCode User settings folder:
 
 **Linux:**  
-```bash
+```zsh
 ~/.config/Code/User/settings.json
 
 **macOS:**  
