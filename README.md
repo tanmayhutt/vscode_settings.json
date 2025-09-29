@@ -63,6 +63,7 @@ Here’s how my VSCode looks with these settings:
 **Linux:**  
 ```zsh
 ~/.config/Code/User/settings.json
+```
 
 **macOS:**  
 ```bash
