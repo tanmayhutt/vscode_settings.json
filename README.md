@@ -67,12 +67,14 @@ Here’s how my VSCode looks with these settings:
 **Linux:**  
 ```zsh
 ~/.config/Code/User/settings.json
+```
 
 **macOS:**  
 ```bash
 ~/Library/Application Support/Code/User/settings.json
+```
 
 **Windows:**  
-```bash
+```powershell
 %APPDATA%\Code\User\settings.json
-
+```
