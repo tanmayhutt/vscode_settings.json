@@ -1,6 +1,7 @@
 # VSCode Settings
 
-These are my personal **Visual Studio Code settings** to make your editor clean, fast, and visually appealing. This `settings.json` focuses on:
+These are my personal **Visual Studio Code settings** to make your editor clean, fast, and visually appealing.  
+This `settings.json` focuses on:
 
 - Minimal distractions  
 - Smooth coding experience  
@@ -11,39 +12,50 @@ These are my personal **Visual Studio Code settings** to make your editor clean,
 
 ---
 
+## Screenshot
+
+Here’s how my VSCode looks with these settings:  
+
+![VSCode Screenshot](settings.json.png)
+
+---
+
 ## Features
 
-### UI / Editor
-- No unnecessary UI clutter: breadcrumbs, tips, hover popups reduced, minimap off  
-- Sidebar on the right for better workflow  
-- Clean line highlighting and no overview ruler border  
-- Sticky scroll disabled for a smooth editor feel  
+### 🎨 UI / Editor
+- No unnecessary UI clutter: breadcrumbs, tips, lightbulbs, minimap, and overview ruler removed  
+- Sidebar moved to the **right** for better workflow  
+- Smooth cursor blinking (`solid`), no sticky scroll  
+- Line numbers always on  
+- Better control over whitespace: auto-trim trailing spaces and add final newline  
 
-### Typography
-- Fonts: `Geist Mono`, `JetBrains Mono`, `Fira Code`  
-- Font size: 16, line height: 32 for comfortable reading  
-- Terminal font size: 16 with 1.5 line height  
-- Font ligatures enabled for coding aesthetics  
+### ✍️ Typography
+- Fonts: **Geist Mono**, **JetBrains Mono**, **Fira Code**  
+- Font size: `16` with line height `32` for comfortable reading  
+- Terminal font size: `16` with `1.5` line height  
+- Advanced font ligatures enabled (`ss01-ss08`, `calt`, `dlig`)  
 
-### Coding Enhancements
-- Format on save for JS, TSX, Vue, Tailwind, HTML, CSS  
-- Word selection includes `-` for faster navigation  
-- Snippet suggestions appear on top  
-- Auto-trimming trailing whitespace and final newline on save  
+### ⚡ Coding Enhancements
+- Format on Save enabled for: **JavaScript, TypeScript React, Vue, Tailwind, HTML, CSS**  
+- Snippet suggestions appear at the **top**  
+- Includes `-` in word selection (useful for CSS and kebab-case vars)  
+- Multiple “Go to Definition/References” options simplified to **goto** only  
+- Linked editing enabled for paired tags  
 
-### Git / SCM
-- Git decorations minimized for less distraction  
+### 🔍 Search / File Management
+- Excludes noisy folders/files: `node_modules`, `vendor`, `dist`, `storage`, lock files, PHPUnit cache, etc.  
+- Explorer sorting by **type**  
+- Auto-save enabled (after delay)  
+
+### 🌀 Git / SCM
+- Git decorations disabled (no noisy gutter icons)  
 - SCM diff decorations hidden  
-- Avoid opening repos in parent folders automatically  
+- Prevents opening repos in parent folders by default  
 
-### Terminal
-- Multiple profiles supported: bash, zsh, fish, tmux, powershell, sh  
-- Default: zsh  
+### 💻 Terminal
+- Multiple profiles supported: **bash, zsh, fish, tmux, pwsh, sh**  
+- Default: **zsh**  
 - Multi-line paste warning disabled  
-
-### Search / File Management
-- Ignores `node_modules`, `vendor`, `dist`, `storage`, lock files, and temp files  
-- Explorer sort order by type  
 
 ---
 
