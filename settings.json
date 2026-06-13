@@ -19,7 +19,7 @@
     "breadcrumbs.enabled": false,
     "scm.diffDecorations": "none",
     "editor.hover.delay": 1500,
-    "editor.hover.enabled": true,
+    "editor.hover.enabled": "on",
     "editor.matchBrackets": "never",
     "workbench.tips.enabled": false,
     "editor.colorDecorators": false,
@@ -46,6 +46,11 @@
     "editor.suggestLineHeight": 30,
     "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.fontSize": 16,
+
+    //Theme
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.iconTheme": "vs-seti",
+
 
     "search.useIgnoreFiles": false,
     "search.exclude": {
@@ -137,7 +142,8 @@
     "workbench.activityBar.location": "top",
     "editor.inlineSuggest.suppressSuggestions": true,
     "editor.padding.top": 16,
-    "editor.cursorBlinking": "solid",
+    "editor.cursorBlinking": "smooth",
+    "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": false,
     "editor.lineHeight": 32,
 
@@ -206,5 +212,17 @@
         "/tmp/postman-folder-pre-request.instructions.md": true,
         "/tmp/postman-http-request-post-response.instructions.md": true,
         "/tmp/postman-http-request-pre-request.instructions.md": true
-    }
+    },
+    "dart.flutterSdkPath": "/Users/tanmay/flutter",
+    "chat.checkpoints.showFileChanges": true,
+    "chat.viewSessions.orientation": "stacked",
+    "code-runner.runInTerminal": true,
+    "redhat.telemetry.enabled": true,
+    "typescript.experimental.useTsgo": true,
+    "yaml.schemas": {
+        "file:///Users/tanmay/.vscode/extensions/continue.continue-1.2.22-darwin-arm64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ]
+    },
+    "explorer.confirmDragAndDrop": false
 }
